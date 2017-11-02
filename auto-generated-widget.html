@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-    <title>Widget / XYZ Axes</title>
+    <title>Widget / XYZ Axes for Grbl</title>
 
     <!-- ChiliPeppr is based on bootstrap CSS. -->
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -302,9 +302,11 @@ cprequire_test(["inline:com-chilipeppr-widget-xyz"], function (xyz) {
 cpdefine("inline:com-chilipeppr-widget-xyz", ["chilipeppr_ready", "jquerycookie"], function () {
     return {
         id: "com-chilipeppr-widget-xyz",
-        url: "http://fiddle.jshell.net/chilipeppr/gh45j/show/light/",
-        fiddleurl: "http://jsfiddle.net/chilipeppr/gh45j/",
-        name: "Widget / XYZ Axes",
+        url: "http://raw.githubusercontent.com/chilipeppr-grbl/widget-grbl-xyz/master/auto-generated-widget.html",       // The final URL of the working widget as a single HTML file with CSS and Javascript inlined. You can let runme.js auto fill this if you are using Cloud9.
+        fiddleurl: "http://ide.c9.io/chilipeppr/widget-grbl-xyz", // The edit URL. This can be auto-filled by runme.js in Cloud9 if you'd like, or just define it on your own to help people know where they can edit/fork your widget
+        githuburl: "https://github.com/chilipeppr-grbl/widget-grbl-xyz", // The backing github repo
+        testurl: "http://widget-grbl-xyz-chilipeppr.c9users.io/widget.html",   // The standalone working widget so can view it working by itself
+        name: "Widget / XYZ Axes for Grbl",
         desc: "This widget shows your XYZ position. It can also show your A position. You have jog controls and axis zeroing and homing.",
         publish: {},
         subscribe: {},
