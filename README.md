@@ -14,9 +14,9 @@ not conflict with other ChiliPeppr widgets.
 | ID                    | com-chilipeppr-widget-xyz |
 | Name                  | Widget / XYZ Axes |
 | Description           | This widget shows your XYZ position. It can also show your A position. You have jog controls and axis zeroing and homing. |
-| chilipeppr.load() URL | http://raw.githubusercontent.com/https://master/auto-generated-widget.html |
+| chilipeppr.load() URL | http://raw.githubusercontent.com/chilipeppr-grbl/widget-grbl-xyz/master/auto-generated-widget.html |
 | Edit URL              | http://ide.c9.io/chilipeppr/widget-grbl-xyz |
-| Github URL            | http://github.com/https:/ |
+| Github URL            | https://github.com/chilipeppr-grbl/widget-grbl-xyz |
 | Test URL              | https://preview.c9users.io/chilipeppr/widget-grbl-xyz/widget.html |
 
 ## Example Code for chilipeppr.load() Statement
@@ -33,7 +33,7 @@ $("body").append('<' + 'div id="myDivWidgetXyz"><' + '/div>');
 
 chilipeppr.load(
   "#myDivWidgetXyz",
-  "http://raw.githubusercontent.com/https://master/auto-generated-widget.html",
+  "http://raw.githubusercontent.com/chilipeppr-grbl/widget-grbl-xyz/master/auto-generated-widget.html",
   function() {
     // Callback after widget loaded into #myDivWidgetXyz
     // Now use require.js to get reference to instantiated widget

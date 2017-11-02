@@ -295,7 +295,7 @@ cprequire_test(["inline:com-chilipeppr-widget-xyz"], function (xyz) {
     //testPauseResume();
     //testAxesValUpdates();
     testUnitsChange();
-    
+    $('body').css('padding', '20px');
 
 } /*end_test*/ );
 
@@ -1820,7 +1820,7 @@ cpdefine("inline:com-chilipeppr-widget-xyz", ["chilipeppr_ready", "jquerycookie"
             // load the pubsub viewer / fork element which decorates our upper right pulldown
             // menu with the ability to see the pubsubs from this widget and the forking links
             var that = this;
-            chilipeppr.load("http://fiddle.jshell.net/chilipeppr/zMbL9/show/light/", function () {
+            chilipeppr.load("http://raw.githubusercontent.com/chilipeppr/widget-pubsubviewer/master/auto-generated-widget.html", function () {
                 require(['inline:com-chilipeppr-elem-pubsubviewer'], function (pubsubviewer) {
                     pubsubviewer.attachTo($('#com-chilipeppr-widget-xyz .panel-heading .dropdown-menu'), that);
                 });
