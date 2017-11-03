@@ -198,12 +198,15 @@ cpdefine("inline:com-chilipeppr-widget-xyz", ["chilipeppr_ready", "jquerycookie"
             var btnEl = $("#com-chilipeppr-widget-xyz .btnToggleShowWcs");
             btnEl.click(this.toggleWcs.bind(this));
             btnEl.popover();
-            chilipeppr.load("#com-chilipeppr-widgetholder-wcs", "http://fiddle.jshell.net/chilipeppr/xz76L1yd/show/light/", function() {
-                cprequire(["inline:com-chilipeppr-widget-wcs"], function (wcs) {
-                    console.log("test running of " + wcs.id);
-                    wcs.init();
+            chilipeppr.load("#com-chilipeppr-widgetholder-wcs", 
+                "http://raw.githubusercontent.com/chilipeppr/widget-wcs/master/auto-generated-widget.html",
+                // "http://fiddle.jshell.net/chilipeppr/xz76L1yd/show/light/", 
+                function() {
+                    cprequire(["inline:com-chilipeppr-widget-wcs"], function (wcs) {
+                        console.log("test running of " + wcs.id);
+                        wcs.init();
+                    });
                 });
-            });
         },
         toggleWcs: function(evt) {
             $("#com-chilipeppr-widget-xyz .btnToggleShowWcs").popover('hide');
